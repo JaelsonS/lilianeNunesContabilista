@@ -16,15 +16,15 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Liliana Nunes · Contabilista Certificada em Coimbra">
   <meta property="og:description" content="Contabilidade rigorosa e próxima em Coimbra. Empresas e trabalhadores independentes.">
-  <meta property="og:image" content="https://www.lnunes-contabilista.pt/assets/img/liliana-nunes-retrato.png">
+  <meta property="og:image" content="https://www.lnunes-contabilista.pt/assets/img/liliana-nunes-retrato.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
-  <link rel="preload" as="image" href="assets/img/liliana-nunes-retrato.png">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Source+Sans+3:wght@400;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Source+Sans+3:wght@400;600&display=swap"></noscript>
+  <link rel="stylesheet" href="assets/css/icons.css">
+  <link rel="preload" as="image" href="assets/img/liliana-nunes-retrato-720.webp" type="image/webp">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script type="application/ld+json">
   {
@@ -32,7 +32,7 @@
     "@type": "AccountingService",
     "name": "Liliana Nunes | Contabilista Certificada",
     "url": "https://www.lnunes-contabilista.pt/",
-    "image": "https://www.lnunes-contabilista.pt/assets/img/liliana-nunes-retrato.png",
+    "image": "https://www.lnunes-contabilista.pt/assets/img/liliana-nunes-retrato.jpg",
     "telephone": "+351 239 160 825",
     "email": "lnunes.contabilista@gmail.com",
     "address": {
@@ -60,17 +60,20 @@
           </h1>
           <p class="lead" data-i18n="home.lead">Acompanhamos empresas e trabalhadores independentes em todo o país com transparência e prazos cumpridos — para que possa decidir com tranquilidade, sem surpresas fiscais.</p>
           <div class="hero-ctas">
-            <a class="btn btn-primary" data-wa="header" href="#"><i class="fa-brands fa-whatsapp"></i> <span data-i18n="cta.scheduleMeeting">Agendar reunião</span></a>
+            <a class="btn btn-primary" data-wa="header" href="#"><i class="i i-whatsapp" aria-hidden="true"></i> <span data-i18n="cta.scheduleMeeting">Agendar reunião</span></a>
             <a class="btn btn-outline" href="servicos.html" data-i18n="cta.seeServices">Ver serviços</a>
           </div>
           <div class="hero-meta">
-            <div><i class="fa-solid fa-shield-halved"></i><span data-i18n="home.meta1">Contabilista Certificada OCC</span></div>
-            <div><i class="fa-solid fa-clock"></i><span data-i18n="home.meta2">Resposta em 24h úteis</span></div>
-            <div><i class="fa-solid fa-lock"></i><span data-i18n="home.meta3">Confidencialidade total</span></div>
+            <div><i class="i i-shield" aria-hidden="true"></i><span data-i18n="home.meta1">Contabilista Certificada OCC</span></div>
+            <div><i class="i i-clock" aria-hidden="true"></i><span data-i18n="home.meta2">Resposta em 24h úteis</span></div>
+            <div><i class="i i-lock" aria-hidden="true"></i><span data-i18n="home.meta3">Confidencialidade total</span></div>
           </div>
         </div>
         <div class="hero-image-wrap">
-          <img src="assets/img/liliana-nunes-retrato.png" alt="Liliana Nunes, Contabilista Certificada em Coimbra" width="576" height="1024" fetchpriority="high" decoding="async">
+          <picture>
+            <source type="image/webp" srcset="assets/img/liliana-nunes-retrato-480.webp 480w, assets/img/liliana-nunes-retrato-720.webp 720w, assets/img/liliana-nunes-retrato.webp 576w" sizes="(max-width: 900px) 92vw, 42vw">
+            <img src="assets/img/liliana-nunes-retrato-720.jpg" alt="Liliana Nunes, Contabilista Certificada em Coimbra" width="405" height="720" fetchpriority="high" decoding="async">
+          </picture>
           <div class="hero-badge">
             <span class="dot"></span>
             <div>
@@ -101,40 +104,40 @@
 
         <div class="services-grid">
           <div class="service-card reveal">
-            <div class="icon"><i class="fa-solid fa-building"></i></div>
+            <div class="icon"><i class="i i-building" aria-hidden="true"></i></div>
             <h3 data-i18n="svc.empresas">Contabilidade de empresas</h3>
             <p data-i18n="svc.empresasBody">Contabilidade mensal, mapas de gestão, reporte fiscal e apoio permanente às decisões financeiras.</p>
-            <a href="servicos.html#empresas"><span data-i18n="cta.learnMore">Saber mais</span> <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="servicos.html#empresas"><span data-i18n="cta.learnMore">Saber mais</span> <i class="i i-arrow" aria-hidden="true"></i></a>
           </div>
           <div class="service-card reveal">
-            <div class="icon"><i class="fa-solid fa-user-tie"></i></div>
+            <div class="icon"><i class="i i-user" aria-hidden="true"></i></div>
             <h3 data-i18n="svc.independentes">Trabalhadores independentes</h3>
             <p data-i18n="svc.independentesBody">Regime simplificado ou organizado, faturação, retenções e planeamento fiscal ao longo do ano.</p>
-            <a href="servicos.html#independentes"><span data-i18n="cta.learnMore">Saber mais</span> <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="servicos.html#independentes"><span data-i18n="cta.learnMore">Saber mais</span> <i class="i i-arrow" aria-hidden="true"></i></a>
           </div>
           <div class="service-card reveal">
-            <div class="icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+            <div class="icon"><i class="i i-file" aria-hidden="true"></i></div>
             <h3 data-i18n="svc.fiscal">IVA, IRC e obrigações fiscais</h3>
             <p data-i18n="svc.fiscalBody">Preparação e submissão das declarações periódicas, com revisão criteriosa antes do envio.</p>
-            <a href="servicos.html#fiscal"><span data-i18n="cta.learnMore">Saber mais</span> <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="servicos.html#fiscal"><span data-i18n="cta.learnMore">Saber mais</span> <i class="i i-arrow" aria-hidden="true"></i></a>
           </div>
           <div class="service-card reveal">
-            <div class="icon"><i class="fa-solid fa-users"></i></div>
+            <div class="icon"><i class="i i-users" aria-hidden="true"></i></div>
             <h3 data-i18n="svc.salarios">Salários e obrigações laborais</h3>
             <p data-i18n="svc.salariosBody">Processamento salarial, DMR, Segurança Social e apoio na admissão de colaboradores.</p>
-            <a href="servicos.html#salarios"><span data-i18n="cta.learnMore">Saber mais</span> <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="servicos.html#salarios"><span data-i18n="cta.learnMore">Saber mais</span> <i class="i i-arrow" aria-hidden="true"></i></a>
           </div>
           <div class="service-card reveal">
-            <div class="icon"><i class="fa-solid fa-clipboard-check"></i></div>
+            <div class="icon"><i class="i i-check" aria-hidden="true"></i></div>
             <h3 data-i18n="svc.atividade">Abertura e cessação de atividade</h3>
             <p data-i18n="svc.atividadeBody">Constituição, alterações de CAE, enquadramentos fiscais e cessações — sem burocracia para si.</p>
-            <a href="servicos.html#atividade"><span data-i18n="cta.learnMore">Saber mais</span> <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="servicos.html#atividade"><span data-i18n="cta.learnMore">Saber mais</span> <i class="i i-arrow" aria-hidden="true"></i></a>
           </div>
           <div class="service-card reveal">
-            <div class="icon"><i class="fa-solid fa-receipt"></i></div>
+            <div class="icon"><i class="i i-receipt" aria-hidden="true"></i></div>
             <h3 data-i18n="svc.irs">IRS anual</h3>
             <p data-i18n="svc.irsBody">Preparação da declaração com simulação prévia e análise das deduções a que tem direito.</p>
-            <a href="servicos.html#irs"><span data-i18n="cta.learnMore">Saber mais</span> <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="servicos.html#irs"><span data-i18n="cta.learnMore">Saber mais</span> <i class="i i-arrow" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
@@ -148,17 +151,17 @@
         </div>
         <div class="value-grid">
           <div class="value reveal">
-            <i class="fa-solid fa-handshake"></i>
+            <i class="i i-handshake" aria-hidden="true"></i>
             <h3 data-i18n="home.value1Title">Proximidade real</h3>
             <p data-i18n="home.value1Body">Fala sempre com quem trata da sua contabilidade. Respostas claras, com contexto.</p>
           </div>
           <div class="value reveal">
-            <i class="fa-solid fa-magnifying-glass-chart"></i>
+            <i class="i i-search" aria-hidden="true"></i>
             <h3 data-i18n="home.value2Title">Rigor técnico</h3>
             <p data-i18n="home.value2Body">Revisão criteriosa das declarações — menos erros, menos risco de coimas e inspeções.</p>
           </div>
           <div class="value reveal">
-            <i class="fa-solid fa-calendar-check"></i>
+            <i class="i i-calendar" aria-hidden="true"></i>
             <h3 data-i18n="home.value3Title">Prazos cumpridos</h3>
             <p data-i18n="home.value3Body">Calendário fiscal antecipado com lembretes. Sem descobrir obrigações em cima da data-limite.</p>
           </div>
@@ -172,7 +175,7 @@
           <span class="eyebrow">IRS <span class="irs-year" data-current-year></span></span>
           <h2 data-i18n="home.irsTitle">Não perca deduções que são suas por direito.</h2>
           <p data-i18n="home.irsBody">Preparamos a sua declaração de IRS com simulação prévia sem compromisso. Analisamos despesas de saúde, educação, habitação, PPR e regimes específicos para trabalhadores independentes.</p>
-          <a class="btn btn-gold" data-wa="irs" href="#"><i class="fa-solid fa-calculator"></i> <span data-i18n="cta.simulateIrs">Simular o meu IRS</span></a>
+          <a class="btn btn-gold" data-wa="irs" href="#"><i class="i i-calc" aria-hidden="true"></i> <span data-i18n="cta.simulateIrs">Simular o meu IRS</span></a>
         </div>
       </div>
     </section>
@@ -182,7 +185,7 @@
         <div class="cta-banner reveal">
           <h2 data-i18n="home.ctaTitle">Vamos conversar sobre o seu negócio.</h2>
           <p data-i18n="home.ctaBody">Reunião inicial gratuita, presencial em Coimbra ou por videochamada. Sem compromisso.</p>
-          <a class="btn btn-gold" data-wa="header" href="#"><i class="fa-brands fa-whatsapp"></i> <span data-i18n="cta.whatsapp">Agendar por WhatsApp</span></a>
+          <a class="btn btn-gold" data-wa="header" href="#"><i class="i i-whatsapp" aria-hidden="true"></i> <span data-i18n="cta.whatsapp">Agendar por WhatsApp</span></a>
         </div>
       </div>
     </section>

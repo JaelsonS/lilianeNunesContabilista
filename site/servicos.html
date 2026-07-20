@@ -20,10 +20,10 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Source+Sans+3:wght@400;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Source+Sans+3:wght@400;600&display=swap"></noscript>
+  <link rel="stylesheet" href="assets/css/icons.css">
+<link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
   <div data-include="partials/header.html"></div>
@@ -43,7 +43,7 @@
         <div>
           <div class="service-list reveal">
             <article class="service-row" id="empresas">
-              <div class="icon" aria-hidden="true"><i class="fa-solid fa-building"></i></div>
+              <div class="icon" aria-hidden="true"><i class="i i-building" aria-hidden="true"></i></div>
               <div>
                 <h3><span data-lang="pt">Contabilidade de empresas</span><span data-lang="en">Company accounting</span></h3>
                 <p data-lang="pt">Contabilidade organizada mensal para sociedades por quotas, unipessoais e SA. Inclui classificação de documentos, apuramento de IVA, IRC, mapas de gestão e apoio permanente à tomada de decisão.</p>
@@ -51,7 +51,7 @@
               </div>
             </article>
             <article class="service-row" id="independentes">
-              <div class="icon" aria-hidden="true"><i class="fa-solid fa-user-tie"></i></div>
+              <div class="icon" aria-hidden="true"><i class="i i-user" aria-hidden="true"></i></div>
               <div>
                 <h3><span data-lang="pt">Trabalhadores independentes</span><span data-lang="en">Self-employed professionals</span></h3>
                 <p data-lang="pt">Enquadramento em regime simplificado ou organizado, emissão de recibos verdes, retenções na fonte, Segurança Social e planeamento fiscal ao longo do ano.</p>
@@ -59,7 +59,7 @@
               </div>
             </article>
             <article class="service-row" id="fiscal">
-              <div class="icon" aria-hidden="true"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+              <div class="icon" aria-hidden="true"><i class="i i-file" aria-hidden="true"></i></div>
               <div>
                 <h3><span data-lang="pt">IVA, IRC e obrigações fiscais</span><span data-lang="en">VAT, corporate tax & filings</span></h3>
                 <p data-lang="pt">Preparação e submissão de declarações periódicas de IVA, Modelo 22, IES e DMR. Revisão prévia para minimizar riscos e maximizar benefícios legais.</p>
@@ -67,7 +67,7 @@
               </div>
             </article>
             <article class="service-row" id="salarios">
-              <div class="icon" aria-hidden="true"><i class="fa-solid fa-users"></i></div>
+              <div class="icon" aria-hidden="true"><i class="i i-users" aria-hidden="true"></i></div>
               <div>
                 <h3><span data-lang="pt">Salários e recursos humanos</span><span data-lang="en">Payroll & HR</span></h3>
                 <p data-lang="pt">Processamento salarial, recibos de vencimento, mapas de férias, apoio à admissão e cessação de contratos, seguros de acidentes de trabalho e comunicações à Segurança Social.</p>
@@ -75,7 +75,7 @@
               </div>
             </article>
             <article class="service-row" id="atividade">
-              <div class="icon" aria-hidden="true"><i class="fa-solid fa-clipboard-check"></i></div>
+              <div class="icon" aria-hidden="true"><i class="i i-check" aria-hidden="true"></i></div>
               <div>
                 <h3><span data-lang="pt">Abertura e cessação de atividade</span><span data-lang="en">Starting & closing activity</span></h3>
                 <p data-lang="pt">Constituição de sociedades, escolha do enquadramento fiscal e do CAE, inscrição em Finanças e Segurança Social, alterações e cessação de atividade.</p>
@@ -83,7 +83,7 @@
               </div>
             </article>
             <article class="service-row" id="consultoria">
-              <div class="icon" aria-hidden="true"><i class="fa-solid fa-lightbulb"></i></div>
+              <div class="icon" aria-hidden="true"><i class="i i-bulb" aria-hidden="true"></i></div>
               <div>
                 <h3><span data-lang="pt">Consultoria pontual</span><span data-lang="en">One-off consulting</span></h3>
                 <p data-lang="pt">Segunda opinião fiscal, revisão de enquadramentos, análise de viabilidade e apoio a operações específicas — sem contrato mensal.</p>
@@ -126,7 +126,7 @@
             <h2>Declaração de IRS <span class="irs-year" data-current-year></span> — com simulação prévia sem custos.</h2>
             <p>Analisamos o e-fatura, deduções à coleta, despesas gerais familiares, saúde, educação, habitação, PPR e regimes específicos para trabalhadores independentes — para obter o melhor resultado possível dentro da lei.</p>
             <p>Inclui verificação de faturas pendentes · simulação conjunta vs. separada · submissão · acompanhamento da liquidação.</p>
-            <a class="btn btn-gold" data-wa="irs" href="#"><i class="fa-solid fa-calculator"></i> Pedir simulação de IRS</a>
+            <a class="btn btn-gold" data-wa="irs" href="#"><i class="i i-calc" aria-hidden="true"></i> Pedir simulação de IRS</a>
           </div>
         </div>
 

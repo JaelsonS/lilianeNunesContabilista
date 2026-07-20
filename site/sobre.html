@@ -20,10 +20,10 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Source+Sans+3:wght@400;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Source+Sans+3:wght@400;600&display=swap"></noscript>
+  <link rel="stylesheet" href="assets/css/icons.css">
+<link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
   <div data-include="partials/header.html"></div>
@@ -43,7 +43,10 @@
         <div>
           <div class="about-layout reveal">
             <div class="about-portrait">
-              <img src="assets/img/liliana-nunes-retrato.png" alt="Liliana Nunes, Contabilista Certificada" width="576" height="1024" loading="lazy" decoding="async">
+              <picture>
+                <source type="image/webp" srcset="assets/img/liliana-nunes-retrato-480.webp 480w, assets/img/liliana-nunes-retrato-720.webp 720w" sizes="(max-width: 800px) 90vw, 320px">
+                <img src="assets/img/liliana-nunes-retrato-720.jpg" alt="Liliana Nunes, Contabilista Certificada" width="405" height="720" loading="lazy" decoding="async">
+              </picture>
             </div>
             <div>
               <span class="eyebrow"><span data-lang="pt">Percurso</span><span data-lang="en">Background</span></span>
@@ -87,7 +90,7 @@
         <div class="cta-banner reveal">
           <h2><span data-lang="pt">Quer conhecer-nos melhor?</span><span data-lang="en">Want to get to know us better?</span></h2>
           <p><span data-lang="pt">Marque uma reunião inicial gratuita — presencial em Coimbra ou por videochamada.</span><span data-lang="en">Book a free introductory meeting — in Coimbra or by video call.</span></p>
-          <a class="btn btn-gold" data-wa="header" href="#"><i class="fa-brands fa-whatsapp"></i> <span data-i18n="cta.whatsapp">Agendar por WhatsApp</span></a>
+          <a class="btn btn-gold" data-wa="header" href="#"><i class="i i-whatsapp" aria-hidden="true"></i> <span data-i18n="cta.whatsapp">Agendar por WhatsApp</span></a>
         </div>
       </div>
     </section>
