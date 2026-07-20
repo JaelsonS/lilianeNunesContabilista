@@ -1,0 +1,46 @@
+<div class="sidebar-sticky">
+  <div class="form-card">
+    <h3 data-i18n="form.title">Peça um orçamento</h3>
+    <p class="sub" data-i18n="form.sub">Resposta em menos de 24 horas úteis.</p>
+    <form data-lead-form novalidate>
+      <div class="field">
+        <label for="lead-service" data-i18n="form.service">Serviço pretendido</label>
+        <select id="lead-service" name="service" required>
+          <option value="" data-i18n="form.select">Selecione uma opção</option>
+          <option value="contabilidade-empresas" data-i18n="form.opt.empresas">Contabilidade de empresas</option>
+          <option value="trabalhadores-independentes" data-i18n="form.opt.independentes">Trabalhadores independentes</option>
+          <option value="irs" data-i18n="form.opt.irs">IRS (ano em curso)</option>
+          <option value="salarios" data-i18n="form.opt.salarios">Salários e RH</option>
+          <option value="abertura-atividade" data-i18n="form.opt.atividade">Abertura / cessação de atividade</option>
+          <option value="consultoria" data-i18n="form.opt.consultoria">Consultoria pontual</option>
+          <option value="outro" data-i18n="form.opt.outro">Outro</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="lead-name" data-i18n="form.name">Nome</label>
+        <input id="lead-name" name="name" type="text" required autocomplete="name" />
+      </div>
+      <div class="field">
+        <label for="lead-phone" data-i18n="form.phone">Telefone</label>
+        <input id="lead-phone" name="phone" type="tel" required autocomplete="tel" />
+      </div>
+      <div class="field">
+        <label for="lead-email" data-i18n="form.email">Email</label>
+        <input id="lead-email" name="email" type="email" required autocomplete="email" />
+      </div>
+      <div class="field">
+        <label for="lead-message" data-i18n="form.message">Mensagem (opcional)</label>
+        <textarea id="lead-message" name="message" rows="3"></textarea>
+      </div>
+      <label class="check">
+        <input type="checkbox" name="privacy" required />
+        <span data-i18n="form.privacy">Li e aceito a Política de Privacidade e autorizo o contacto para dar seguimento ao pedido.</span>
+      </label>
+      <button type="submit" class="btn btn-primary">
+        <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+        <span data-i18n="cta.sendRequest">Enviar pedido</span>
+      </button>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</div>
